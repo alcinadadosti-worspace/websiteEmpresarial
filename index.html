@@ -730,7 +730,10 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
 
 @media (max-width:1024px) { .benefits-grid { grid-template-columns:repeat(2,1fr); } }
 @media (max-width:768px) { .benefits-grid { grid-template-columns:1fr; } .careers-inner { padding:5rem 1.5rem; }
-  .gptw-seal-link > div { width:120px !important; height:120px !important; } }
+  .gptw-block { flex-direction:column !important; align-items:center !important; text-align:center; padding:1.5rem !important; }
+  .gptw-block img { width:120px !important; height:120px !important; }
+  .gptw-block .gptw-hint { justify-content:center; }
+}
 
 /* Parceria cards */
 .parceria-card {
@@ -1162,7 +1165,7 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
       <h2 class="section-title">Trabalhe <em>conosco</em></h2>
       <p>Fazer parte do Grupo Alcina Maria é mais do que um emprego — é crescer junto com a gente. Valorizamos cada colaborador e oferecemos benefícios que fazem a diferença.</p>
     </div>
-    <div class="reveal" style="display:flex;align-items:center;gap:2.5rem;margin-bottom:3.5rem;padding:2.5rem;border-radius:24px;background:rgba(255,255,255,0.06);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.08)">
+    <div class="reveal gptw-block" style="display:flex;align-items:center;gap:2.5rem;margin-bottom:3.5rem;padding:2.5rem;border-radius:24px;background:rgba(255,255,255,0.06);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.08)">
       <a href="https://www.youtube.com/watch?v=NkWWMRz26_k&t=101s" target="_blank" rel="noopener" style="flex-shrink:0;display:block;transition:transform 0.5s cubic-bezier(0.16,1,0.3,1);border-radius:20px" class="gptw-seal-link">
         <img src="selo (1).svg" alt="Selo Great Place to Work" style="width:160px;height:160px;object-fit:contain;display:block;filter:drop-shadow(0 0 16px rgba(196,162,101,0.3));transition:filter 0.4s ease">
       </a>
@@ -1170,7 +1173,7 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
         <div style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.8rem;padding:0.3rem 0.8rem;border-radius:100px;background:rgba(196,162,101,0.1);border:1px solid rgba(196,162,101,0.15)">★ Empresa Certificada</div>
         <h3 style="font-family:var(--font-display);font-size:1.6rem;font-weight:400;color:var(--white);margin-bottom:0.6rem;line-height:1.3">Somos uma empresa <span style="font-style:italic;color:var(--gold-light)">Great Place to Work</span></h3>
         <p style="font-size:0.92rem;color:rgba(255,255,255,0.5);line-height:1.7;margin-bottom:0.8rem">O selo GPTW é uma certificação global que reconhece empresas com ambientes de trabalho excepcionais, avaliados pelos próprios colaboradores. Ter esse selo significa que nosso time validou: aqui é um excelente lugar para trabalhar — com confiança na liderança, respeito entre colegas e orgulho do que fazemos.</p>
-        <p style="font-size:0.8rem;color:var(--gold);display:flex;align-items:center;gap:0.4rem">
+        <p class="gptw-hint" style="font-size:0.8rem;color:var(--gold);display:flex;align-items:center;gap:0.4rem">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg>
           Clique no selo ao lado para saber mais sobre o que é ser GPTW
         </p>
